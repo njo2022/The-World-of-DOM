@@ -1,0 +1,29 @@
+/* You can add custom CSS here to further style the calculator */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 1rem;
+}
+
+.calculator-button {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-button:hover {
+    background-color: #eee;
+}
+
+.output {
+    grid-column: 1 / -1; /* Span all columns */
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-size: 2rem;
+    border-bottom: 1px solid #ddd;
+}
