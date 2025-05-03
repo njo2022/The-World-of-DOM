@@ -4,110 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="mydesign.css">
-    <script defer src="quiz.js"></script>
-    <title>Quiz</title>
+    <script defer src="calculator.js"></script>
+    <title>Home</title>
 </head>
 <body>
-<h1 class="text-3xl font-bold text-center mt-6 mb-6 pd-6 pb-6 text-gray-500 rounded-full shadow-md bg-white" >QUESTION POUR UN CHAMPION!</h1>
+<div class="w-full gap-6 p-8">
+    <div>
+        <h1 class="text-3xl font-bold text-center mt-6 mb-6 pd-6 pb-6 text-gray-500 rounded-full shadow-md bg-white">Welcome to The World of DOM</h1>
+    </div>
+    <h3 class="text-3xl font-bold text-center mt-6 mb-6 text-gray-500">Mes Projets</h3>
 
-<div class="bg-gray-100 p-8 rounded-md shadow-md max-w-md mx-auto">
-    <form id="quizForm" class="space-y-6">
-        <div class="question">
-            <p class="font-semibold mb-3 text-gray-700">1. Quelle est la capitale de la France?</p>
-            <div class="space-y-2">
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q1" value="paris" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300" required>
-                    <span class="ml-2 text-gray-700">Paris</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q1" value="lyon" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Lyon</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q1" value="marseille" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Marseille</span>
-                </label>
-            </div>
+    <div class="flex justify-center rounded-full border-gray-300">
+        <a href="quiz.html" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/daily-quiz-top-header.webp" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project 01: QUIZ</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-semibold">Instructions: </span> ou have to create your own quiz and style it.
+                The quiz return the score as an alert msg
+                You will have to use :
+                DOM events JS functions CSS Styling HTML blocking.</p>
         </div>
-
-        <div class="question">
-            <p class="font-semibold mb-3 text-gray-700">2. Qui a peint la Joconde?</p>
-            <div class="space-y-2">
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q2" value="vinci" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300" required>
-                    <span class="ml-2 text-gray-700">Leonard de Vinci</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q2" value="picasso" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Pablo Picasso</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q2" value="vangogh" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Vincent Van Gogh</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p class="font-semibold mb-3 text-gray-700">3. Combien font 2 + 2?</p>
-            <div class="space-y-2">
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q3" value="3" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300" required>
-                    <span class="ml-2 text-gray-700">3</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q3" value="4" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">4</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q3" value="5" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">5</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p class="font-semibold mb-3 text-gray-700">4. Quelle est la plus grande planète du système solaire?</p>
-            <div class="space-y-2">
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q4" value="mars" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300" required>
-                    <span class="ml-2 text-gray-700">Mars</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q4" value="jupiter" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Jupiter</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q4" value="saturne" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Saturne</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p class="font-semibold mb-3 text-gray-700">5. Quel est l'élément chimique de symbole H?</p>
-            <div class="space-y-2">
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q5" value="helium" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300" required>
-                    <span class="ml-2 text-gray-700">Hélium</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q5" value="hydrogene" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Hydrogène</span>
-                </label>
-                <label class="flex items-center border rounded-md px-3 py-2 bg-white">
-                    <input type="radio" name="q5" value="azote" class="form-radio h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300">
-                    <span class="ml-2 text-gray-700">Azote</span>
-                </label>
-            </div>
-        </div>
-
-        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-md focus:outline-none focus:shadow-outline">Valider</button>
-    </form>
-
-    <div id="result" class="mt-6 font-semibold text-gray-700"></div>
+        </a>
+    </div>
 </div>
+
+<div>
+    <div class="flex justify-center rounded-full border-gray-300">
+        <a href="calculator.html" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/calculator.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project 02: Develop a Calculator</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-semibold">Instructions: </span> Now as you are familiar with JavaScript commands, Create a basic calculator app that can perform addition, subtraction, multiplication, and division. The calculator should have a user-friendly interface with a display area and buttons for digits and operations..</p>
+        </div>
+        </a>
+    </div>
+</div>
+
     
 </body>
 </html>

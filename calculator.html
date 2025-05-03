@@ -14,30 +14,30 @@
         <h1 class="text-3xl text-center font-bold mt-6 mb-6 pd-6 pb-6 text-gray-500 rounded-md shadow-md bg-white">Calculator</h1>
     </div>
     <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md">
-        <div class="output" id="output">0</div>
-            <div class="calculator-grid">
+        <div class="output rounded-md p-4 mb-4" id="output">0</div>
+            <div class="calculator-grid text-2xl font-bold">
                 <button class="calculator-button bg-red-500 text-white" onclick="clearDisplay()">C</button>
                 <button class="calculator-button" onclick="deleteLastDigit()">←</button>
-                 <button class="calculator-button" onclick="appendOperator('/')">/</button>
-                <button class="calculator-button" onclick="appendNumber('7')">7</button>
-                <button class="calculator-button" onclick="appendNumber('8')">8</button>
+                <button class="calculator-button" onclick="appendOperator('/')">/</button>
+                <button class="calculator-button" onclick="appendOperator('*')">*</button> 
                 <button class="calculator-button" onclick="appendNumber('9')">9</button>
-                <button class="calculator-button" onclick="appendOperator('*')">*</button>
-                <button class="calculator-button" onclick="appendNumber('4')">4</button>
-                <button class="calculator-button" onclick="appendNumber('5')">5</button>
-                <button class="calculator-button" onclick="appendNumber('6')">6</button>
+                <button class="calculator-button" onclick="appendNumber('8')">8</button>
+                <button class="calculator-button" onclick="appendNumber('7')">7</button>
                 <button class="calculator-button" onclick="appendOperator('-')">-</button>
-                <button class="calculator-button" onclick="appendNumber('1')">1</button>
-                <button class="calculator-button" onclick="appendNumber('2')">2</button>
-                <button class="calculator-button" onclick="appendNumber('3')">3</button>
+                <button class="calculator-button" onclick="appendNumber('6')">6</button>
+                <button class="calculator-button" onclick="appendNumber('5')">5</button>
+                <button class="calculator-button" onclick="appendNumber('4')">4</button>
                 <button class="calculator-button" onclick="appendOperator('+')">+</button>
+                <button class="calculator-button" onclick="appendNumber('3')">3</button>
+                <button class="calculator-button" onclick="appendNumber('2')">2</button>
+                <button class="calculator-button" onclick="appendNumber('1')">1</button>
                 <button class="calculator-button" onclick="appendNumber('0')">0</button>
                 <button class="calculator-button" onclick="appendNumber('.')">.</button>
                 <button class="calculator-button bg-blue-500 text-white" onclick="calculate()">=</button>
             </div>
         </div>
-        <div class="mt-4 left-0 right-0 flex justify-center">
-            <button><a href="home.html" class="bg-gray-200 p-4 font-semibold py-2 rounded-md focus:outline-none focus:shadow-outline border-2 border-gray-200 font-bold text-xl text-black">Retourner à l'accueil</a></button>
+        <div class="mt-4 p-4 left-0 right-0 flex justify-center">
+            <button><a href="index.html" class="bg-blue-500 hover:bg-blue-200 p-4 font-semibold py-2 rounded-md focus:outline-none focus:shadow-outline border-2 border-gray-200 font-bold text-xl text-white">Retourner à l'accueil</a></button>
         </div>
     </div>
 </body>
